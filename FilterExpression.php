@@ -42,3 +42,4 @@ class FilterExpression
 			return $expression;
 		}
 	}
+}
