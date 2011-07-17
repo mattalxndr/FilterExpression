@@ -1,10 +1,9 @@
-FilterExpression library
-=====
+# FilterExpression library
 
-Usage
------
+## Usage
 
-    // Create a filter expression
+### Create a filter expression
+
     $expression = new FilterExpression;
     $expression->adjectives[] = 'featured';
     $expression->noun = 'events';
