@@ -4,7 +4,7 @@ class FilterExpression
 {
 	public $adjectives, $noun, $thats;
 
-	public function getString()
+	public function __toString()
 	{
 		$adjectiveString = self::getFormattedList($this->adjectives, 'and');
 
