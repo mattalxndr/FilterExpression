@@ -3,6 +3,7 @@
 class FilterExpression
 {
 	public $adjectives = array(), $noun = null, $thats = array();
+	public $ordered;
 
 	public function __toString()
 	{
@@ -16,6 +17,9 @@ class FilterExpression
 			$expression = $adjectiveString.' '.$expression;
 		if ($thatsString)
 			$expression .= ' that '.$thatsString;
+
+		if ($this->ordered)
+			$expression .= ', ordered '.$this->ordered;
 
 		if ($expression === $this->noun)
 			$expression = 'all '.$expression;
