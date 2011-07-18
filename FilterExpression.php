@@ -2,7 +2,9 @@
 
 class FilterExpression
 {
-	public $adjectives = array(), $noun = null, $thats = array();
+	public $adjectives = array();
+	public $noun;
+	public $thats = array();
 	public $ordered;
 
 	public function __toString()
